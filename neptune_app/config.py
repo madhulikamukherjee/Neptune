@@ -6,5 +6,6 @@ SERVE_PORT  = 5000
 THREADED    = False
 
 # MongoDB Config
-MONGO_DBNAME      = 'neptune_db'
-MONGO_URI    = 'mongodb://localhost:27017/neptune_db'
+MONGODB_DB      = 'neptune_db'
+MONGODB_HOST    = 'localhost'
+MONGODB_PORT    = 27017

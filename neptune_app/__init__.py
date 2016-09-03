@@ -1,11 +1,11 @@
 from flask import Flask
-from flask_pymongo import PyMongo
+from flask_mongoengine import MongoEngine
 
 
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
 
-db = PyMongo(app)
+db = MongoEngine(app)
 
 def create_app():
 	from .planets.controller import planets
